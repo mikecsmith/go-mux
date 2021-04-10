@@ -1,4 +1,4 @@
-package main_test
+package main
 
 import (
 	"bytes"
@@ -9,11 +9,9 @@ import (
 	"os"
 	"strconv"
 	"testing"
-
-	"github.com/mikecsmith/go-mux"
 )
 
-var a main.App
+var a App
 
 func ensureTableExists() {
 	if _, err := a.DB.Exec(tableCreationQuery); err != nil {
