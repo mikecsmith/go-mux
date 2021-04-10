@@ -1,1 +1,1 @@
-package go_mux
+package main
